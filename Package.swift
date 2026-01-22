@@ -26,7 +26,7 @@ _swiftSettings += [
 ]
 
 let package = Package(
-  name: "swift-atomics",
+  name: "candle-swift-atomics",
   products: [
     .library(
       name: "CandleAtomics",
