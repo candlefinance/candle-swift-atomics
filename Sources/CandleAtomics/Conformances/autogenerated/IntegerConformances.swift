@@ -18,7 +18,7 @@
 
 
 #if !ATOMICS_NATIVE_BUILTINS
-import _Candle_AtomicsShims
+import Candle_AtomicsShims
 #endif
 
 

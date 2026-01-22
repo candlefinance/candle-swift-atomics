@@ -1,3 +1,0 @@
-module _Candle_AtomicsShims {
-  header "_AtomicsShims.h"
-}
