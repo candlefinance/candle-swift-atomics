@@ -27,7 +27,7 @@ extension Bool {
   }
 }
 #else
-import _AtomicsShims
+import Candle_AtomicsShims
 #endif
 
 extension Bool: AtomicValue {

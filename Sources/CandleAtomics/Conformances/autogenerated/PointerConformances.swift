@@ -19,7 +19,7 @@
 
 
 #if !ATOMICS_NATIVE_BUILTINS
-import _AtomicsShims
+import Candle_AtomicsShims
 #endif
 
 extension UnsafeRawPointer: AtomicValue {

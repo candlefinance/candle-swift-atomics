@@ -23,19 +23,19 @@ let package = Package(
   name: "swift-atomics",
   products: [
     .library(
-      name: "Atomics",
-      targets: ["Atomics"]),
+      name: "CandleAtomics",
+      targets: ["CandleAtomics"]),
   ],
   targets: [
     .target(
-      name: "_AtomicsShims",
+      name: "Candle_AtomicsShims",
       exclude: [
         "CMakeLists.txt"
       ]
     ),
     .target(
-      name: "Atomics",
-      dependencies: ["_AtomicsShims"],
+      name: "CandleAtomics",
+      dependencies: ["Candle_AtomicsShims"],
       exclude: [
         "CMakeLists.txt",
         "Conformances/AtomicBool.swift.gyb",
@@ -50,7 +50,7 @@ let package = Package(
     ),
     .testTarget(
       name: "AtomicsTests",
-      dependencies: ["Atomics"],
+      dependencies: ["CandleAtomics"],
       exclude: [
         "main.swift",
         "Basics/BasicTests.gyb-template",
