@@ -28,14 +28,14 @@ let package = Package(
   ],
   targets: [
     .target(
-      name: "Candle_AtomicsShims",
+      name: "_Candle_AtomicsShims",
       exclude: [
         "CMakeLists.txt"
       ]
     ),
     .target(
       name: "CandleAtomics",
-      dependencies: ["Candle_AtomicsShims"],
+      dependencies: ["_Candle_AtomicsShims"],
       exclude: [
         "CMakeLists.txt",
         "Conformances/AtomicBool.swift.gyb",

@@ -17,9 +17,9 @@ internal func _sa_retain_n(_ object: UnsafeMutableRawPointer, _ delta: UInt32)
 @_silgen_name("_sa_release_n")
 internal func _sa_release_n(_ object: UnsafeMutableRawPointer, _ delta: UInt32)
 #elseif ATOMICS_NATIVE_BUILTINS
-@_implementationOnly import Candle_AtomicsShims
+@_implementationOnly import _Candle_AtomicsShims
 #else
-import Candle_AtomicsShims
+import _Candle_AtomicsShims
 #endif
 
 extension Unmanaged {
